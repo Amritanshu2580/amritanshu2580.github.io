@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery for Angel(Divu)</title>
+  <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <header>
+      <h1>Tumhara gift❤️</h1>
+      <p>hoi hoi! morning. or sunno <br>
+    wo tum img pe click krna coz har img <br>
+k sath ek chota sa note bhi h.</p>
+    </header>
+
+    <div class="image-grid">
+      <!-- Add your images and notes here -->
+      <div class="image-container">
+        <img src="img1.jpeg" alt="Memory 1" onclick="openFullscreen(this, 'I guess ye ek tandom sham m mai tere ghr aa gya tha 😅😅')">
+      </div>
+      <div class="image-container">
+        <img src="img2.jpeg" alt="Memory 2" onclick="openFullscreen(this, 'Hoi ye toh hamari pehli date ki h...')">
+      </div>
+      <div class="image-container">
+        <img src="img3.jpeg" alt="Memory 3" onclick="openFullscreen(this, 'Ye bhi pehli date ki hi h...i bc uss time bhi meko dar lg rha tha ki koi dekh n le and koi jaan pehchan ka na mil jaye')">
+      </div>
+      <div class="image-container">
+        <img src="img4.jpeg" alt="Memory 4" onclick="openFullscreen(this, 'Haa ye wali meri personal favorite coz isme your smile is very pyari pyrai❤️')">
+      </div>
+      <div class="image-container">
+        <img src="img5.jpeg" alt="Memory 5" onclick="openFullscreen(this, 'aree ye wali bhi personal favorite...😅i know u r angel but devilish look kind of suite krta h teko')">
+      </div>
+      <div class="image-container">
+        <img src="img6.jpeg" alt="Memory 6" onclick="openFullscreen(this, 'We together forever ❤️❤️')">
+      </div>
+      <div class="image-container">
+        <img src="img7.jpeg" alt="Memory 6" onclick="openFullscreen(this, 'me like coffee+you❤️')">
+      </div>
+      <div class="image-container">
+        <img src="img8.jpeg" alt="Memory 6" onclick="openFullscreen(this, '😂😂ye wli img bahot mushkil se mili h meko...iske liye kitna drama kiya tha mai😅...mere paas lehenge m teri bas yahi ek pic mst pic h👌')">
+      </div>
+    </div>
+    <p>
+        Once Again Happy Birthday motu...mummy ko thanks and papa ko pranam teko paida krne k liye 😅😅
+    </p>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <!-- Fullscreen Image Overlay -->
+  <div id="fullscreen-overlay" onclick="closeFullscreen()">
+    <img id="fullscreen-image" src="" alt="Fullscreen Image">
+    <div id="note-card">
+      <p id="note-text"></p>
+    </div>
+  </div>
+
+  <script src="page2.js"></script>
+</body>
+</html>
